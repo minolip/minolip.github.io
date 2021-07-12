@@ -1,1 +1,0 @@
-# minolip.github.io
