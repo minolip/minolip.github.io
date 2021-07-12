@@ -1,0 +1,218 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#home{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh;
+    width: 100%;
+    /* background: url(../images/2.jpg)no-repeat; */
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(227, 242, 255, 0.192);
+}
+
+header .logo{
+    position: relative;
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.navigation{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navigation a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.navigation a:not(:last-child){
+    margin-right: 30px;
+}
+
+.links{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links a{
+    position: relative;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+    transition-property: transform;
+}
+
+.links a:not(:last-child){
+    margin-right: 60px;
+}
+
+.content{
+    display: flex;
+    /* flex: 1 1 500px; */
+    justify-content: center;
+}
+
+.image{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.image img{
+    vertical-align: middle;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.online_certificates{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+h2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+.online_certificates h3{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-size: x-large;
+}
+
+.online_certificates a{
+    color: rgb(7, 16, 138);
+    text-decoration: none;
+    font-weight: 500;
+    /* letter-spacing: 1px; */
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.certificate_content{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: center;
+}
+
+.course_card{
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.course_card img{
+    border-radius: 0 5px 5px 0;
+    overflow: hidden;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 33%;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.card:hover {
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card img{
+    border-radius: 5px 5px 0 0;
+}
+
+.card p{
+    padding: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.card_link{
+    color: rgb(7, 16, 138);
+    text-decoration: none;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project_content{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    padding: 30px;
+    background-color: #181616;
+}
+
+footer .copywright{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+footer p{
+    color: #fff;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    letter-spacing: 1px;
+}
