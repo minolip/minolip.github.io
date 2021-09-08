@@ -13,13 +13,8 @@ html {
 
 #home{
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
     width: 100%;
-    /* background: url(../images/2.jpg)no-repeat; */
     background-size: cover;
     background-position: center;
 }
@@ -28,11 +23,7 @@ header{
     position: relative;
     top: 0;
     width: 100%;
-    padding: 30px 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: rgba(227, 242, 255, 0.192); */
+    padding: 30px 10px;
 }
 
 header .nameline{
@@ -41,7 +32,7 @@ header .nameline{
     justify-content: center;
     align-items: center;
     color: rgb(70, 71, 71);
-    /* margin-top: 20px; */
+    margin-top: 30px;
 }
 
 .name{
@@ -75,12 +66,19 @@ header .nameline{
     font-weight: 500;
     letter-spacing: 1px;
     padding: 8px 15px;
-    /* border-radius: 20px; */
+    border-radius: 20px;
     transition: 0.3s;
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 
 .navigation a:not(:last-child){
     margin-right: 30px;
+}
+
+.navigation a:hover{
+    background-color: rgb(176, 182, 182);
+    color: white;
 }
 
 .image{
@@ -95,6 +93,11 @@ header .nameline{
     width: 250px;
     height: 250px;
     border-radius: 50%;
+}
+
+.view-more-parent{
+    display: flex;
+    justify-content: center;
 }
 
 .view-button{
@@ -119,7 +122,7 @@ header .nameline{
 
 .links{
     position: absolute;
-    bottom: 20px;
+    bottom: 70px;
     width: 100%;
     display: flex;
     justify-content: center;
