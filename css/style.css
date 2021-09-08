@@ -15,10 +15,11 @@ html {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
     width: 100%;
-    background: url(../images/2.jpg)no-repeat;
+    /* background: url(../images/2.jpg)no-repeat; */
     background-size: cover;
     background-position: center;
 }
@@ -29,9 +30,28 @@ header{
     width: 100%;
     padding: 30px 100px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    background-color: rgba(227, 242, 255, 0.192);
+    /* background-color: rgba(227, 242, 255, 0.192); */
+}
+
+header .nameline{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(70, 71, 71);
+    /* margin-top: 20px; */
+}
+
+.name{
+    font-weight: 800;
+    font-size:xx-large
+}
+
+.slogan{
+    font-family: cursive;
+    font-weight: 700;
 }
 
 /* header .logo{
@@ -44,24 +64,58 @@ header{
     letter-spacing: 1px;
 } */
 
-/* .navigation{
+.navigation{
     display: flex;
-    justify-content: flex-end;
-} */
+    justify-content: center;
+}
 
 .navigation a{
-    color: rgb(255, 255, 255);
+    color: rgb(70, 71, 71);
     text-decoration: none;
     font-weight: 500;
     letter-spacing: 1px;
     padding: 8px 15px;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     transition: 0.3s;
 }
 
 .navigation a:not(:last-child){
     margin-right: 30px;
 }
+
+.image{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.image img{
+    vertical-align: middle;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.view-button{
+    background-color: white; 
+    color: black; 
+    border: 2px solid rgb(70, 71, 71);
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.view-button:hover {
+    background-color: rgb(176, 182, 182);
+    color: white;
+  }
 
 .links{
     position: absolute;
@@ -74,8 +128,8 @@ header{
 
 .links a{
     position: relative;
-    font-size: 40px;
-    color: rgb(255, 255, 255);
+    font-size: 30px;
+    color: rgb(70, 71, 71);
     transition: 0.3s;
     transition-property: transform;
 }
@@ -84,23 +138,11 @@ header{
     margin-right: 60px;
 }
 
-.content{
+/* .content{
     display: flex;
-    /* flex: 1 1 500px; */
+    /* flex: 1 1 500px; 
     justify-content: center;
-}
-
-.image{
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-.image img{
-    vertical-align: middle;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
+} */
 
 .online_certificates{
     display: flex;
