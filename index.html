@@ -44,45 +44,45 @@
         <div class="about-content">
             <p class="about-heading">Hey, It's Minoli</p>
             <p class="about-description">A self-motivated, dedication, enthusiastic, reliable, and hardworking IT
-                Undergraduate who is learning different programming styles, trying out various technologies and 
+                Undergraduate who is learning different programming styles, trying out various technologies and
                 frameworks. And an entry level blogger.
             </p>
         </div>
     </section>
     <section id="certificates">
         <div class="online_certificates">
-            <h2>Online Certificates</h2><br />
+            <h2>ONLINE CERTIFICATES</h2><br />
             <div class="certificate_content">
                 <div class="course_card">
-                    <img src="images/coursera.png" width="100%" height="150px">
+                    <img src="images/coursera.png" height="60px">
                     <a
                         href="https://www.coursera.org/account/accomplishments/verify/UMXQ84Z5L97Y?utm_source=ln&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course">
                         <p>Amazon DynamoDB: Building NoSQL Database-Driven Applications</p>
                     </a>
                 </div>
                 <div class="course_card">
-                    <img src="images/coursera.png" width="100%" height="150px">
+                    <img src="images/coursera.png" height="60px">
                     <a
                         href="https://www.coursera.org/account/accomplishments/verify/729HKEFBXKQH?utm_source=ln&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course">
                         <p>Structuring Machine Learning Projects</p>
                     </a>
                 </div>
                 <div class="course_card">
-                    <img src="images/datacamp.png" width="100%" height="150px">
+                    <img src="images/datacamp.png" height="60px">
                     <a
                         href="https://www.datacamp.com/statement-of-accomplishment/course/33d02ac07c8fe161db9fff91257f882a2bbcc2f4">
                         <p>Python Data Science Toolbox (Part 1)</p>
                     </a>
                 </div>
                 <div class="course_card">
-                    <img src="images/datacamp.png" width="100%" height="150px">
+                    <img src="images/datacamp.png" height="60px">
                     <a
                         href="https://www.datacamp.com/statement-of-accomplishment/course/ee71227cb072a6d2b946e2f6c50870a213c3c440">
                         <p>Intermediate Python</p>
                     </a>
                 </div>
                 <div class="course_card">
-                    <img src="images/datacamp.png" width="100%" height="150px">
+                    <img src="images/datacamp.png" height="60px">
                     <a
                         href="https://www.datacamp.com/statement-of-accomplishment/course/37934d6ec0db3ea37c8ab78db28041291a710c80">
                         <p>Introduction to Python</p>
@@ -120,6 +120,25 @@
             <p>By MinoliPadmakanthi</p>
         </div>
     </footer>
+    <script>
+        // Remove the transition class
+        const square = document.querySelector('.about-heading');
+        square.classList.remove('about-transition');
+
+        // Create the observer, same as before:
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    about-heading.classList.add('about-transition');
+                    return;
+                }
+
+                about-heading.classList.remove('about-transition');
+            });
+        });
+
+        observer.observe(document.querySelector('.about-content'));
+    </script>
 </body>
 
 </html>
